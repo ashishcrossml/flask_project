@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Skills{% endblock %}
+
+{% block content %}
+<section id="skills" class="section slide-in">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        {% for skill in skills %}
+            <div class="skill-item">{{ skill }}</div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %} 

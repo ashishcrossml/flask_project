@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<header id="about" class="hero">
+    <div class="hero-content fade-in">
+        <h1>{{ about.name }}</h1>
+        <h2>{{ about.title }}</h2>
+        <p class="summary">{{ about.summary }}</p>
+        <div class="social-links">
+            <a href="mailto:{{ about.social_links.email }}">Email</a>
+            <a href="{{ about.social_links.linkedin }}" target="_blank">LinkedIn</a>
+            <a href="{{ about.social_links.github }}" target="_blank">GitHub</a>
+        </div>
+    </div>
+</header>
+{% endblock %}

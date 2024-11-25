@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero-content fade-in">
+        <h1>Welcome to My Portfolio</h1>
+        <h2>{{ data.about.title }}</h2>
+        <p class="summary">{{ data.about.summary }}</p>
+        <div class="social-links">
+            <a href="{{ url_for('about') }}" class="btn">About Me</a>
+            <a href="{{ url_for('skills') }}" class="btn">My Skills</a>
+            <a href="{{ url_for('experience') }}" class="btn">Experience</a>
+            <a href="{{ url_for('projects') }}" class="btn">Projects</a>
+            <a href="{{ url_for('education') }}" class="btn">Education</a>
+        </div>
+    </div>
+</div>
+{% endblock %} 
